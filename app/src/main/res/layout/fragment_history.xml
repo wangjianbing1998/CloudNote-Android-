@@ -1,0 +1,47 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@drawable/b5"
+             tools:context="com.com.wjb.Main.Test_ViewPager">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:id="@+id/linearlayout"
+           android:orientation="horizontal"
+           android:layout_height="wrap_content">
+
+           <SearchView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/search_view"
+               android:layout_toLeftOf="@+id/insert_note_ibtn"
+               android:layout_weight="1"
+               ></SearchView>
+           <Button
+               android:layout_toRightOf="@+id/search_view"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_weight="2"
+               android:text="@string/delete_all_items"
+               android:id="@+id/delete_all_history_items"
+               android:layout_alignParentRight="true"/>
+
+       </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/show_lv"
+            android:divider="@color/gray"
+            android:layout_below="@+id/linearlayout"
+            android:dividerHeight="2dp">
+        </ListView>
+    </RelativeLayout>
+
+</FrameLayout>

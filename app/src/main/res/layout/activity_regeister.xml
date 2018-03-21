@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_regeister"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+                android:background="@drawable/b3"
+    tools:context="com.example.administrator.cloudnote.RegisterActivity">
+
+    <TextView
+        android:text="@string/regeister_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="14dp"
+        android:textSize="@dimen/big_text_size"
+        android:id="@+id/regeister_title_tv"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:text="@string/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username_et"
+        android:layout_alignRight="@+id/username_tv"
+
+        android:layout_marginTop="12dp"
+        android:textSize="@dimen/text_size"
+        android:id="@+id/password_tv" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/username_et"
+        android:layout_alignLeft="@+id/username_et"
+        android:layout_alignStart="@+id/username_et"
+        android:hint="@string/hint_input_password"
+        android:id="@+id/password_et" />
+
+
+    <TextView
+        android:text="@string/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_et"
+        android:layout_alignRight="@+id/password_tv"
+
+        android:layout_marginTop="12dp"
+        android:textSize="@dimen/text_size"
+        android:id="@+id/re_password_tv" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/password_et"
+        android:layout_alignLeft="@+id/password_et"
+        android:layout_alignStart="@+id/password_et"
+        android:hint="@string/hint_input_re_password"
+        android:id="@+id/re_password_et" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:textSize="@dimen/text_size"
+        android:hint="@string/hint_input_username"
+        android:maxLength="35"
+        android:id="@+id/username_et"
+        android:layout_below="@+id/regeister_title_tv"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:id="@+id/regeister_btn"
+        android:textSize="@dimen/text_size"
+        android:text="@string/regeiste"
+        android:ems="5"
+        android:layout_below="@+id/re_password_et"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:id="@+id/username_tv"
+        android:layout_alignTop="@+id/username_et"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/exit_btn"
+        android:text="@string/exit"
+        android:ems="5"
+        android:layout_alignBaseline="@+id/regeister_btn"
+        android:layout_alignBottom="@+id/regeister_btn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

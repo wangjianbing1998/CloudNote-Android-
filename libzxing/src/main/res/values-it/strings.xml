@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="scan_it">Scansione QRcode</string>
+    <string name="scan_text">Allinea il codice QR all’interno del riguadro per avviare la scansione</string>
+    <string name="prompt">Suggerimento</string>
+    <string name="confirm">Conferma</string>
+</resources>

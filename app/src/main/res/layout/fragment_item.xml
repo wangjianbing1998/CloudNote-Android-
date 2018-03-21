@@ -1,0 +1,34 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.com.wjb.Main.Test_ViewPager">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:background="@drawable/b5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@android:drawable/ic_input_add"
+            android:id="@+id/insert_note_ibtn"
+            android:layout_alignParentRight="true"/>
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_view"
+            android:layout_toLeftOf="@+id/insert_note_ibtn"
+            ></SearchView>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/show_lv"
+            android:divider="@color/gray"
+            android:layout_below="@+id/search_view"
+            android:dividerHeight="2dp">
+        </ListView>
+    </RelativeLayout>
+
+</FrameLayout>
